@@ -1,0 +1,102 @@
+/* Reset básico para una apariencia consistente en diferentes navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #555; /* Color gris suave para el texto */
+    background-color: #f0f0f0; /* Fondo general en color pastel */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #ffe4e1; /* Color pastel suave para el header */
+}
+
+.header nav {
+    display: flex;
+}
+
+.header nav a {
+    color: #555;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.main-banner {
+    background-color: #e6e6fa; /* Lavanda pastel */
+    color: #555;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.section {
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    flex: 1 1 300px; /* Ajuste de las tarjetas para que sean responsivas */
+    background-color: #fafad2; /* Color pastel suave para las tarjetas */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #b0e0e6; /* Polvo azul pastel */
+    color: #555;
+}
+
+.btn {
+    background-color: #add8e6; /* Color pastel para botones */
+    color: #555;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #90ee90; /* Cambio de color al pasar el mouse */
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+    .header, .section {
+        flex-direction: column;
+    }
+
+    .header nav {
+        margin-top: 20px;
+    }
+
+    .header nav a {
+        margin: 0 10px;
+    }
+}
